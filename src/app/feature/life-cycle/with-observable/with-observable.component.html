@@ -1,0 +1,21 @@
+<style>
+  :host {
+    flex: 1;
+  }
+</style>
+
+<app-card [title]="name">
+  <div actions class="flex gap-4">
+    <button class="btn" (click)="incByMutation()">Inc by Mutation</button>
+    <button class="btn" (click)="incByRefChange()">Inc by Ref Change</button>
+  </div>
+  <div class="px-4 pb-2">
+    Count: {{ counter.count }}
+  </div>
+  <div class="border-t border-gray-200 p-4 pt-2">
+    <span class="font-semibold block mb-2">Lifecycle:</span>
+    <ul class="pl-2">
+      <li *ngFor="let msg of messages">{{ msg }}</li>
+    </ul>
+  </div>
+</app-card>

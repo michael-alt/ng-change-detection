@@ -1,0 +1,9 @@
+<div class="bg-white shadow-lg flex-1">
+  <div class="border-b border-gray-200 p-4 mb-4">
+    <div class="flex justify-between items-center gap-2">
+      <span class="font-semibold text-lg">{{ title }}</span>
+      <ng-content select="[actions]"></ng-content>
+    </div>
+  </div>
+  <ng-content></ng-content>
+</div>
