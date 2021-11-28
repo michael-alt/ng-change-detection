@@ -1,0 +1,13 @@
+<style>
+  :host {
+    flex: 1
+  }
+</style>
+
+<app-card [title]="name">
+  <div class="p-4 flex flex-col gap-2">
+    <app-sub-child-a appHighlightCheck></app-sub-child-a>
+    <app-sub-child-b appHighlightCheck></app-sub-child-b>
+    <app-counter-display appHighlightCheck></app-counter-display>
+  </div>
+</app-card>

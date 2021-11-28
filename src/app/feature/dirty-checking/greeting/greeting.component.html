@@ -1,0 +1,11 @@
+<div class="p-4 border border-gray-200 rounded">
+  <p class="mb-2">Hallo {{ name }}!</p>
+  <input #fld
+    (keyup.enter)="name=fld.value"
+    class="p-2 border border-indigo-300 focus:outline-none focus:ring focus:border-indigo-700"
+    type="text" placeholder="Dein Name?">
+    <div class="mt-2 flex flex-col gap-2">
+      <app-sub-child-a appHighlightCheck></app-sub-child-a>
+      <app-sub-child-b appHighlightCheck></app-sub-child-b>
+    </div>
+</div>

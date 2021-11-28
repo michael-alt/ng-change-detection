@@ -1,0 +1,15 @@
+<div class="bg-white m-8 mt-0 p-4 shadow-lg">
+  <h2 class="text-2xl">Globale Aktionen</h2>
+  <div class="mt-4 flex justify-around">
+    <button class="btn" (click)="true">Click</button>
+    <button class="btn" (click)="incCounter()">Inc Counter</button>
+    <button #appRefBtn class="btn">AppRef.Tick</button>
+    <button class="btn" (click)="toggleInterval()">
+      {{ intervalTimer ? 'Stop' : 'Start' }} Interval
+    </button>
+  </div>
+</div>
+<div class="w-screen px-8 flex gap-4 flex-wrap">
+  <app-domain-alpha></app-domain-alpha>
+  <app-domain-beta></app-domain-beta>
+</div>
